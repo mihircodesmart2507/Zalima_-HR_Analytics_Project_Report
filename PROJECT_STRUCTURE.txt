@@ -1,0 +1,37 @@
+TalentView HR Dashboard - Project Structure
+============================================
+
+TalentView_HR_Dashboard/
+│
+├── app.py                      # Main Streamlit application (START HERE)
+├── data_preparation.py         # Data modeling (Power Query equivalent)
+├── dax_measures.py            # DAX-like measures and calculations
+├── run_dashboard.py           # Helper script to run dashboard
+├── requirements.txt           # Python dependencies
+│
+├── pages/                     # Dashboard pages
+│   ├── __init__.py
+│   ├── workforce_overview.py   # Page 1: Workforce Overview
+│   ├── attrition_analysis.py   # Page 2: Attrition Analysis
+│   └── hiring_analysis.py     # Page 3: Hiring Analysis
+│
+├── README.md                  # Complete project documentation
+├── PROJECT_GUIDE.md           # Technical guide with Power BI mapping
+├── QUICK_START.md             # Quick start guide
+├── PROJECT_STRUCTURE.txt      # This file
+└── .gitignore                 # Git ignore file
+
+ARCHIVE/                        # Old pricing analysis files (if any)
+
+HOW TO RUN:
+===========
+1. Install dependencies: pip install -r requirements.txt
+2. Run dashboard: streamlit run app.py
+3. Or use: python run_dashboard.py
+
+DATA REQUIREMENTS:
+==================
+- CSV file with HR employee data
+- Required columns: EmployeeNumber, Attrition, Department, JobRole, etc.
+- See README.md for full column list
+
